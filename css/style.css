@@ -320,3 +320,86 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   .footer-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 24px; }
 }
+
+
+/* ============================================================
+   INTERACTIVE MOOD PICKER  (competitor-beating feature)
+   ============================================================ */
+.picker {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow);
+}
+.picker-controls { margin-bottom: 26px; }
+.picker-label {
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--text-dim); margin-bottom: 12px; display: block;
+}
+.picker-row {
+  display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px;
+}
+.chip, .pf {
+  border: 1px solid var(--border-strong);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  padding: 9px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  font-family: var(--font);
+}
+.chip:hover, .pf:hover { color: var(--text); border-color: var(--accent-2); transform: translateY(-1px); }
+.chip.active { background: var(--gradient); color: #fff; border-color: transparent; box-shadow: var(--shadow-glow); }
+.pf.active { background: rgba(139, 92, 246, 0.18); color: var(--text); border-color: var(--accent-2); }
+
+.picker-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.picker-empty { color: var(--text-dim); text-align: center; padding: 40px 0; grid-column: 1 / -1; }
+
+/* ---- Rich film card (modeled on top competitor, upgraded) ---- */
+.film-card {
+  display: flex; flex-direction: column;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.22s ease, border-color 0.22s;
+  animation: fadeUp 0.4s ease both;
+}
+.film-card:hover { transform: translateY(-5px); border-color: var(--border-strong); }
+.film-poster {
+  height: 120px; display: grid; place-items: center; font-size: 2.4rem; position: relative;
+}
+.film-poster .mood-tag {
+  position: absolute; top: 10px; left: 10px;
+  font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  background: rgba(0,0,0,0.5); color: #fff; padding: 4px 9px; border-radius: 999px;
+  backdrop-filter: blur(4px);
+}
+.film-info { padding: 16px 18px 18px; display: flex; flex-direction: column; flex: 1; }
+.film-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.film-top h3 { font-size: 1.02rem; line-height: 1.25; }
+.film-top h3 .year { color: var(--text-dim); font-weight: 500; font-size: 0.85rem; }
+.film-rating { color: var(--accent-3); font-weight: 700; font-size: 0.85rem; white-space: nowrap; }
+.film-blurb { color: var(--text-muted); font-size: 0.85rem; margin: 8px 0 14px; flex: 1; }
+.film-platforms { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.pf-badge {
+  font-size: 0.7rem; font-weight: 600;
+  background: rgba(255,255,255,0.06); border: 1px solid var(--border-strong);
+  color: var(--text-muted); padding: 3px 9px; border-radius: 6px;
+}
+.film-trailer {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.85rem; font-weight: 600; color: var(--accent);
+  align-self: flex-start;
+}
+.film-trailer:hover { gap: 10px; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
