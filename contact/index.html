@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact 36VIBES — Suggest a Movie or Say Hi</title>
+  <meta name="description" content="Get in touch with 36VIBES — suggest a film, request a 'movies like' guide, or ask about partnerships. We read everything." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://36vibes.com/contact/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="36VIBES" />
+  <meta property="og:title" content="Contact 36VIBES" />
+  <meta property="og:url" content="https://36vibes.com/contact/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact 36VIBES",
+    "url": "https://36vibes.com/contact/",
+    "isPartOf": { "@type": "WebSite", "name": "36VIBES", "url": "https://36vibes.com/" }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="36VIBES home">
+        <span class="badge">36</span><span>VIBES</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="/#picker">Mood Picker</a>
+        <a href="/vibes/">By Vibe</a>
+        <a href="/genres/">Genres</a>
+        <a href="/streaming-guides/">Streaming</a>
+        <a href="/movies-like/">Movies Like</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="/#newsletter" class="btn btn-primary">Get Picks</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> &rsaquo; <span>Contact</span>
+      </nav>
+      <header class="article-header">
+        <span class="eyebrow">Say Hi</span>
+        <h1>Get in touch</h1>
+        <p class="lead">Got a film we have to see? Want a "movies like ___" guide? Or interested in a partnership? Drop us a line — we read everything.</p>
+      </header>
+      <div class="article-body">
+        <form onsubmit="return false;" style="display:flex;flex-direction:column;gap:16px;max-width:520px;">
+          <input type="text" placeholder="Your name" aria-label="Your name" required
+                 style="padding:13px 16px;border-radius:10px;border:1px solid var(--border-strong);background:var(--bg-card);color:var(--text);font-size:0.95rem;" />
+          <input type="email" placeholder="your@email.com" aria-label="Your email" required
+                 style="padding:13px 16px;border-radius:10px;border:1px solid var(--border-strong);background:var(--bg-card);color:var(--text);font-size:0.95rem;" />
+          <textarea placeholder="Your message..." aria-label="Your message" rows="5" required
+                    style="padding:13px 16px;border-radius:10px;border:1px solid var(--border-strong);background:var(--bg-card);color:var(--text);font-size:0.95rem;font-family:inherit;resize:vertical;"></textarea>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send message</button>
+        </form>
+        <p style="color:var(--text-dim);font-size:0.88rem;margin-top:18px;">Prefer email? Reach us at <strong>hello@36vibes.com</strong>. We typically reply within a couple of days.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;justify-content:center;">
+        <span>&copy; 2026 36VIBES.COM — Movies that match your mood &#127902;</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
