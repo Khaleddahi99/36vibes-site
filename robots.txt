@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block nothing that matters for SEO; allow all crawlers
+Disallow: /js/
+Disallow: /search?
+
+Sitemap: https://36vibes.com/sitemap.xml

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>36VIBES — Movies That Match Your Mood | What to Watch by Vibe</title>
+  <meta name="description" content="Can't decide what to watch? 36VIBES helps you find the perfect movie for every mood — cozy nights, feel-good vibes, mind-benders and more. Plus streaming guides and 'movies like' picks." />
+  <meta name="keywords" content="movies by mood, what to watch, movie recommendations, films by vibe, cozy movies, feel good movies, streaming guide, movies like" />
+  <meta name="author" content="36VIBES" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://36vibes.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="36VIBES" />
+  <meta property="og:title" content="36VIBES — Movies That Match Your Mood" />
+  <meta property="og:description" content="Find the perfect movie for every mood. Browse films by vibe, get streaming guides, and discover hidden gems." />
+  <meta property="og:url" content="https://36vibes.com/" />
+  <meta property="og:image" content="https://36vibes.com/assets/og-cover.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="36VIBES — Movies That Match Your Mood" />
+  <meta name="twitter:description" content="Find the perfect movie for every mood. Browse films by vibe and discover hidden gems." />
+  <meta name="twitter:image" content="https://36vibes.com/assets/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "36VIBES",
+    "url": "https://36vibes.com/",
+    "description": "Movie recommendations organized by mood and vibe.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://36vibes.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "36VIBES",
+    "url": "https://36vibes.com/",
+    "logo": "https://36vibes.com/assets/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/36vibes",
+      "https://www.tiktok.com/@36vibes",
+      "https://www.pinterest.com/36vibes"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand" aria-label="36VIBES home">
+        <span class="badge">36</span>
+        <span>VIBES</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#vibes">By Vibe</a>
+        <a href="#categories">Browse</a>
+        <a href="#trending">Trending</a>
+        <a href="#streaming">Streaming</a>
+        <a href="#hidden-gems">Hidden Gems</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#newsletter" class="btn btn-primary">Get Picks</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow">Movies by Mood</span>
+        <h1>Tell us your <span class="gradient-text">vibe.</span><br />We'll find your movie.</h1>
+        <p>Stop scrolling for 40 minutes. 36VIBES matches the perfect film to exactly how you feel right now — cozy, heartbroken, hyped, or somewhere in between.</p>
+        <div class="hero-actions">
+          <a href="#vibes" class="btn btn-primary">Find My Vibe &rarr;</a>
+          <a href="#trending" class="btn btn-ghost">See What's Trending</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>1,200+</strong><span>Films Curated</span></div>
+          <div class="stat"><strong>36</strong><span>Vibes Mapped</span></div>
+          <div class="stat"><strong>Weekly</strong><span>Fresh Picks</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VIBE / MOOD GRID (primary SEO hook) ============ -->
+    <section class="section" id="vibes">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Pick A Feeling</span>
+          <h2>What's your vibe tonight?</h2>
+          <p>Our most-loved way to choose. Tap a mood and get a hand-picked watchlist in seconds.</p>
+        </div>
+        <div class="vibe-grid">
+          <a href="/vibes/cozy-rainy-day-movies/" class="vibe-card v1 reveal">
+            <span class="emoji">&#9748;</span>
+            <h3>Cozy &amp; Rainy Day</h3>
+            <p>Blanket, tea, comfort films.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/feel-good-movies/" class="vibe-card v2 reveal">
+            <span class="emoji">&#9728;&#65039;</span>
+            <h3>Feel-Good &amp; Happy</h3>
+            <p>Instant serotonin boost.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/mind-bending-movies/" class="vibe-card v3 reveal">
+            <span class="emoji">&#129504;</span>
+            <h3>Mind-Bending</h3>
+            <p>Plot twists &amp; big questions.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/feel-good-movies/" class="vibe-card v4 reveal">
+            <span class="emoji">&#127777;&#65039;</span>
+            <h3>Summer Vibes</h3>
+            <p>Sun-soaked, nostalgic, alive.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/sad-cathartic-movies/" class="vibe-card v5 reveal">
+            <span class="emoji">&#128557;</span>
+            <h3>Good Cry</h3>
+            <p>Cathartic tear-jerkers.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/dark-academia-movies/" class="vibe-card v6 reveal">
+            <span class="emoji">&#128218;</span>
+            <h3>Dark Academia</h3>
+            <p>Moody, intellectual, autumnal.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/adrenaline-movies/" class="vibe-card v7 reveal">
+            <span class="emoji">&#128293;</span>
+            <h3>Adrenaline Rush</h3>
+            <p>Edge-of-your-seat action.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+          <a href="/vibes/date-night-movies/" class="vibe-card v8 reveal">
+            <span class="emoji">&#10084;&#65039;</span>
+            <h3>Date Night</h3>
+            <p>Romance for two.</p>
+            <span class="tag">View picks &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORY FEATURES (best-ranking content silos) ============ -->
+    <section class="section" id="categories" style="background:var(--bg-elevated);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Browse 36VIBES</span>
+          <h2>Find your next watch, your way</h2>
+          <p>The six content hubs built to answer exactly what people search for.</p>
+        </div>
+        <div class="cat-grid">
+          <a href="/what-to-watch/" class="cat-card reveal">
+            <div class="icon">&#127909;</div>
+            <h3>What to Watch</h3>
+            <p>Fresh, curated recommendations updated weekly — by platform, year, and runtime.</p>
+            <span class="arrow">Explore picks &rarr;</span>
+          </a>
+          <a href="/streaming-guides/" class="cat-card reveal">
+            <div class="icon">&#128250;</div>
+            <h3>Streaming Guides</h3>
+            <p>"Where can I watch it?" Answered. Netflix, Prime, Max, Disney+ and more.</p>
+            <span class="arrow">Find where to stream &rarr;</span>
+          </a>
+          <a href="/movies-like/" class="cat-card reveal">
+            <div class="icon">&#128279;</div>
+            <h3>Movies Like...</h3>
+            <p>Loved a film? We'll line up 10 more with the same energy and aesthetic.</p>
+            <span class="arrow">Get similar films &rarr;</span>
+          </a>
+          <a href="/genres/" class="cat-card reveal">
+            <div class="icon">&#127917;</div>
+            <h3>By Genre</h3>
+            <p>Horror, romance, sci-fi, A24-core and beyond — deep-dives into every genre.</p>
+            <span class="arrow">Browse genres &rarr;</span>
+          </a>
+          <a href="/hidden-gems/" class="cat-card reveal">
+            <div class="icon">&#128142;</div>
+            <h3>Hidden Gems</h3>
+            <p>Underrated and overlooked films you won't find on every "best of" list.</p>
+            <span class="arrow">Discover gems &rarr;</span>
+          </a>
+          <a href="/vibes/" class="cat-card reveal">
+            <div class="icon">&#10024;</div>
+            <h3>All Vibes</h3>
+            <p>The full mood index — 36 vibes mapped to the perfect watchlist for each.</p>
+            <span class="arrow">See all moods &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRENDING / LATEST POSTS ============ -->
+    <section class="section" id="trending">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Fresh This Week</span>
+          <h2>Trending on 36VIBES</h2>
+          <p>The lists everyone's saving right now.</p>
+        </div>
+        <div class="post-grid">
+          <article class="post-card reveal">
+            <a href="/vibes/cozy-rainy-day-movies/">
+              <div class="post-thumb t1">&#9748;</div>
+              <div class="post-body">
+                <span class="cat-pill">Cozy Vibes</span>
+                <h3>21 Cozy Movies for a Rainy Day That Feel Like a Warm Hug</h3>
+                <p>Comfort films to pair with tea and a blanket.</p>
+                <div class="post-meta"><span>8 min read</span><span>Updated this week</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="post-card reveal">
+            <a href="/streaming-guides/">
+              <div class="post-thumb t2">&#128250;</div>
+              <div class="post-body">
+                <span class="cat-pill">Streaming Guide</span>
+                <h3>Where to Watch the Best Feel-Good Movies in 2026</h3>
+                <p>Every platform, mapped so you never search twice.</p>
+                <div class="post-meta"><span>6 min read</span><span>New</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="post-card reveal">
+            <a href="/movies-like/">
+              <div class="post-thumb t3">&#128279;</div>
+              <div class="post-body">
+                <span class="cat-pill">Movies Like</span>
+                <h3>15 Movies Like Blade Runner With the Same Neon Aesthetic</h3>
+                <p>If you live for moody sci-fi cityscapes.</p>
+                <div class="post-meta"><span>9 min read</span><span>Popular</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="post-card reveal">
+            <a href="/hidden-gems/">
+              <div class="post-thumb t4">&#128142;</div>
+              <div class="post-body">
+                <span class="cat-pill">Hidden Gems</span>
+                <h3>12 Underrated Movies on Netflix You Completely Missed</h3>
+                <p>Quietly brilliant films buried by the algorithm.</p>
+                <div class="post-meta"><span>7 min read</span><span>Editor's pick</span></div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STREAMING STRIP ============ -->
+    <section class="section" id="streaming" style="background:var(--bg-elevated);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Never Search Twice</span>
+          <h2>Where to stream it</h2>
+          <p>We track availability across the major platforms so you find it fast.</p>
+        </div>
+        <div class="cat-grid">
+          <a href="/streaming-guides/netflix/" class="cat-card reveal"><div class="icon">N</div><h3>Netflix</h3><p>Best films by mood available now.</p><span class="arrow">Browse &rarr;</span></a>
+          <a href="/streaming-guides/prime-video/" class="cat-card reveal"><div class="icon">P</div><h3>Prime Video</h3><p>Hidden gems &amp; new arrivals.</p><span class="arrow">Browse &rarr;</span></a>
+          <a href="/streaming-guides/max/" class="cat-card reveal"><div class="icon">M</div><h3>Max</h3><p>Prestige picks &amp; classics.</p><span class="arrow">Browse &rarr;</span></a>
+          <a href="/streaming-guides/disney-plus/" class="cat-card reveal"><div class="icon">D+</div><h3>Disney+</h3><p>Cozy &amp; family-friendly vibes.</p><span class="arrow">Browse &rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HIDDEN GEMS CTA ============ -->
+    <section class="section" id="hidden-gems">
+      <div class="container">
+        <div class="newsletter reveal" id="newsletter">
+          <span class="eyebrow">Join 36VIBES</span>
+          <h2>One perfect movie pick. Every Friday.</h2>
+          <p>No spam, no 200-film lists. Just one hand-picked film matched to the weekend's vibe — straight to your inbox.</p>
+          <form onsubmit="return false;">
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" class="btn btn-primary">Send Me Picks</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="/" class="brand"><span class="badge">36</span><span>VIBES</span></a>
+          <p>Movies that match your mood. We curate films by vibe so you spend less time scrolling and more time watching.</p>
+        </div>
+        <div>
+          <h4>Vibes</h4>
+          <a href="/vibes/cozy-rainy-day-movies/">Cozy &amp; Rainy Day</a>
+          <a href="/vibes/feel-good-movies/">Feel-Good</a>
+          <a href="/vibes/mind-bending-movies/">Mind-Bending</a>
+          <a href="/vibes/date-night-movies/">Date Night</a>
+        </div>
+        <div>
+          <h4>Browse</h4>
+          <a href="/what-to-watch/">What to Watch</a>
+          <a href="/streaming-guides/">Streaming Guides</a>
+          <a href="/movies-like/">Movies Like...</a>
+          <a href="/hidden-gems/">Hidden Gems</a>
+        </div>
+        <div>
+          <h4>36VIBES</h4>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/disclosure/">Affiliate Disclosure</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 36VIBES.COM — All rights reserved.</span>
+        <span>Made for movie lovers &#127902;</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
