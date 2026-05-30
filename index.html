@@ -116,7 +116,13 @@
         </div>
         <div class="picker reveal">
           <div class="picker-controls">
-            <span class="picker-label">1. How do you feel?</span>
+            <span class="picker-label">1. Movies or TV?</span>
+            <div class="picker-row" id="typeChips" role="group" aria-label="Choose movies or TV">
+              <button class="chip active" data-type="all" type="button">&#127902; Either</button>
+              <button class="chip" data-type="movie" type="button">&#127909; Movies</button>
+              <button class="chip" data-type="tv" type="button">&#128250; TV Shows</button>
+            </div>
+            <span class="picker-label">2. How do you feel?</span>
             <div class="picker-row" id="moodChips" role="group" aria-label="Choose a mood">
               <button class="chip active" data-mood="all" type="button">&#10024; Surprise me</button>
               <button class="chip" data-mood="cozy" type="button">&#9748; Cozy</button>
@@ -128,7 +134,7 @@
               <button class="chip" data-mood="dark-academia" type="button">&#128218; Dark Academia</button>
               <button class="chip" data-mood="funny" type="button">&#128514; Funny</button>
             </div>
-            <span class="picker-label">2. Where do you stream?</span>
+            <span class="picker-label">3. Where do you stream?</span>
             <div class="picker-row" id="platformChips" role="group" aria-label="Filter by streaming platform">
               <button class="pf active" data-pf="all" type="button">All platforms</button>
               <button class="pf" data-pf="Netflix" type="button">Netflix</button>
@@ -137,6 +143,10 @@
               <button class="pf" data-pf="Disney+" type="button">Disney+</button>
               <button class="pf" data-pf="Apple" type="button">Apple TV</button>
             </div>
+          </div>
+          <div class="picker-resultbar">
+            <span id="pickerCount" class="picker-count"></span>
+            <button id="pickerShuffle" class="picker-shuffle" type="button">&#127922; Shuffle again</button>
           </div>
           <div class="picker-results" id="pickerResults" aria-live="polite"></div>
         </div>
