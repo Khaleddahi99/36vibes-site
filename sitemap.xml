@@ -31,11 +31,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://36vibes.com/hidden-gems/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://36vibes.com/vibes/cozy-rainy-day-movies/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
